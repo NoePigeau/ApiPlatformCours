@@ -2,6 +2,7 @@
 
 namespace App\Entity\Auth;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Entity\Blog\Comment;
 use App\Entity\Blog\Publication;
 use App\Entity\Shop\Product;
@@ -10,6 +11,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
+#[ApiResource()]
 #[ORM\Entity()]
 #[ORM\Table(name: '`user`')]
 class User
